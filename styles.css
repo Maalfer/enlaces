@@ -155,3 +155,65 @@ footer {
     font-size: 1.7rem;
   }
 }
+
+/* Estilos para el botón y los videos */
+.courses-button {
+  display: block;
+  width: 100%;
+  background: rgba(30, 30, 35, 0.8);
+  color: #f0db4f;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(240, 219, 79, 0.3);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.courses-button:hover {
+  background: rgba(40, 40, 45, 0.9);
+  transform: translateY(-2px);
+}
+
+.courses-button i {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.video-container {
+  display: none;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.video-container.visible {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
