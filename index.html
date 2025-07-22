@@ -47,7 +47,60 @@
       </a>
     </div>
 
+    <button id="toggleVideos" class="courses-button">
+      <i class="fas fa-chevron-down"></i> Mis Cursos Gratuitos
+    </button>
+
+    <div id="videoContainer" class="video-container">
+      <!-- Videos embebidos de YouTube -->
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TEe990b01aE?si=F_cqYAHVbHcIIuaa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDvxqqSoyZs?si=MMI7gWE9pPHpQuSZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tNeRFm2jY7c?si=ja3MJKPH7396Ob9i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M3AayeYuzMI?si=824LTa_-54pXK9tK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vDuPrPImO0I?si=Qcyje-zSYXuM1z2x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ginzuvA22Nw?si=GCddu5DsQFDtZBy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/in5p0W4OxdI?si=ynq0NmRU7zavPOdq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1nn6orjuEI8?si=4UOa84bwC4Vi1AMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2kzsOpH-_A?si=-kFnOSYkRpBzEO6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/daYt6R4PJrI?si=N9ikEfjuWrGklPhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
     <footer>&copy; 2025 Mario Álvarez · Todos los derechos reservados</footer>
   </main>
+
+  <script>
+    document.getElementById('toggleVideos').addEventListener('click', function() {
+      const videoContainer = document.getElementById('videoContainer');
+      const icon = this.querySelector('i');
+      
+      videoContainer.classList.toggle('visible');
+      
+      if (videoContainer.classList.contains('visible')) {
+        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+      } else {
+        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+      }
+    });
+  </script>
 </body>
 </html>
